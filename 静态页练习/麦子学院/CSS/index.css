@@ -1,0 +1,183 @@
+/* 公共 */
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+a {
+    color: #fff;
+}
+
+/* header */
+header {
+    padding-bottom: 5px;
+}
+
+/* top-nav */
+.over-spread {
+    background-color: #333;
+}
+
+.top-nav {
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.top-nav a {
+    margin: 0 20px;
+}
+
+.top-nav a:hover {
+    color: #006699;
+}
+
+.top-nav span {
+    margin: 0 20px;
+}
+
+/* logo-search */
+.logo-search {
+    line-height: 59px;
+    padding: 20px 0;
+}
+
+.search-wrap {
+    padding-left: 30px;
+}
+
+.search {
+    border: 2px solid red;
+    width: 290px;
+    height: 36px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.search-wrap a {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.logo-search h1 {
+    font-size: 21px;
+    font-weight: normal;
+
+}
+
+/* main-nav */
+.main-nav {
+    background-color: #A30100;
+}
+
+.main-nav li {
+    width: 106px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* content */
+.content {
+    width: 960px;
+}
+
+.content a {
+    color: #333;
+}
+
+/* 公司简介 */
+.company-profile {
+    margin-right: 30px;
+}
+
+.company-logo {
+    border-bottom: 1px solid #333;
+    width: 499px;
+}
+
+.company-logo img {
+    margin-top: 25px;
+}
+
+.company-logo a {
+    margin-top: 60px;
+}
+
+.profile {
+    width: 499px;
+    margin: 10px 10px 10px 0;
+}
+
+.profile p {
+    text-indent: 2em;
+    font: 1.1em/24px 微软雅黑;
+}
+
+.profile img {
+    margin-right: 10px;
+}
+
+/* 行业新闻 */
+.industry-news {
+    width: 400px;
+}
+
+.news-logo {
+    width: 400px;
+    border-bottom: 1px solid #333;
+}
+
+.news-logo img {
+    margin-top: 25px;
+}
+
+.news-logo a {
+    margin-top: 60px;
+}
+
+.news-profile {
+    width: 400px;
+    margin-top: 10px;
+}
+
+.news-profile p {
+    text-indent: 2em;
+    width: 253px;
+}
+
+.article {
+    width: 400px;
+    margin-top: 10px;
+}
+
+.article li {
+    height: 25px;
+}
+
+/* 热销产品推荐 */
+.product {
+    width: 960px;
+    border-bottom: 1px solid #333;
+    margin-top: 10px;
+}
+.product a {
+    color: #333;
+    margin-top: 25px;
+}
+.photo {
+    text-align: center;
+}
+.photo li {
+    display: inline-block;
+    margin: 10px 5px 0 0 ;
+}
+/* 尾部 */
+footer{
+    margin-top: 25px;
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}

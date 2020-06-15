@@ -1,0 +1,78 @@
+/* 浮动 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 清除浮动 */
+.clearfix {
+    content: " ";
+    clear: both;
+    display: table;
+
+}
+
+/* 链接样式 */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 块级元素样式*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+/* 列表 图片边框*/
+ol,
+li,
+ul,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+/* 表格 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 文字样式 */
+body {
+    font-size: 14px;
+}
+
+/* 图片样式 */
+img{
+    border: none;
+    vertical-align: middle;
+}
