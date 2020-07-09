@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function leapYear() {
-            var year = prompt('请输入年份');
-            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-                return year + '是闰年';
-            } else {
-                return year + '不是闰年';
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var random = getRandom(1, 50);
+        function guess() {
+            for (var i = 0; i < 10; i++) {
+                var num = prompt('请猜1~50之间的一个整数');
+                if (num > random) {
+                    alert('你猜大了');
+                } else if (num < random) {
+                    alert('你猜小了');
+                } else {
+                    alert('猜对了');
+                }
             }
         }
-        alert(leapYear());
+        guess();
     </script>
 </head>
 
