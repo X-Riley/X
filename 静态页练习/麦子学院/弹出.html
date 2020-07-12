@@ -6,23 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function getRandom(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-        var random = getRandom(1, 50);
-        function guess() {
-            for (var i = 0; i < 10; i++) {
-                var num = prompt('请猜1~50之间的一个整数');
-                if (num > random) {
-                    alert('你猜大了');
-                } else if (num < random) {
-                    alert('你猜小了');
-                } else {
-                    alert('猜对了');
+        function indexStr(str){
+            // var arr1 = arr;
+            var arr2 = [];
+            for(i=0;i<str.length;i++){
+                if(str.indexOf(o) === -1){
+                    arr2.push(arr1[i]);
                 }
             }
+            return arr2;
         }
-        guess();
+        console.log(removeArrey('abcoefoxyozzopp'));
     </script>
 </head>
 
