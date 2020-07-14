@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function indexStr(str){
-            // var arr1 = arr;
-            var arr2 = [];
-            for(i=0;i<str.length;i++){
-                if(str.indexOf(o) === -1){
-                    arr2.push(arr1[i]);
-                }
+        var str = 'abcoefoxyozzopp';
+        var obj = new Object();
+        for (i = 0; i < str.length; i++) {
+            var chars = str.charAt(i);
+            if (obj[chars]) {
+                obj[chars]++;
+            } else {
+                obj[chars] = 1;
             }
-            return arr2;
         }
-        console.log(removeArrey('abcoefoxyozzopp'));
+        var num = 0;
+        var ch = '';
+        for (var k in obj) {
+            if (obj[k] > num) {
+                num = obj[k];
+                ch = k;
+            }
+        }
+        console.log('出现次数最多的是：'+ch+'\n'+'出现的次数为：'+num)
     </script>
 </head>
 
