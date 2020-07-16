@@ -5,31 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        var str = 'abcoefoxyozzopp';
-        var obj = new Object();
-        for (i = 0; i < str.length; i++) {
-            var chars = str.charAt(i);
-            if (obj[chars]) {
-                obj[chars]++;
-            } else {
-                obj[chars] = 1;
-            }
-        }
-        var num = 0;
-        var ch = '';
-        for (var k in obj) {
-            if (obj[k] > num) {
-                num = obj[k];
-                ch = k;
-            }
-        }
-        console.log('出现次数最多的是：'+ch+'\n'+'出现的次数为：'+num)
-    </script>
+    
 </head>
 
 <body>
-
+    <button>查看密码</button>
+    <input type="password">
+    <script>
+        var btn = document.querySelector('button');
+        var input = document.querySelector('input');
+        btn.onclick = function(){
+            input.type = 'text';
+        }
+    </script>
 </body>
 
 </html>
