@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
 
 <body>
-    <button>查看密码</button>
+    <span>请输入6~10位数字</span>
     <input type="password">
+    <span id="message"></span>
     <script>
-        var btn = document.querySelector('button');
         var input = document.querySelector('input');
-        btn.onclick = function(){
-            input.type = 'text';
+        var message = document.getElementById('message');
+        input.onblur = function () {
+            if (input.value.length >= 6 || input.value.length <= 10) {
+                message.innerHTML = '输入正确';
+            } else {
+                message.innerHTML = '输入错误';
+            }
         }
     </script>
 </body>
