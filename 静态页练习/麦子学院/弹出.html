@@ -5,20 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            margin: 0 auto;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+
+        .bor {
+            border: 1px solid black;
+        }
+        .bg{
+            background-color:pink;
+        }
+    </style>
 </head>
 
 <body>
-    <span>请输入6~10位数字</span>
-    <input type="password">
-    <span id="message"></span>
+    <table class="bor">
+        <thead>
+            <th class="bor"><input type="checkbox" id="checkall"></th>
+            <th class="bor">1</th>
+            <th class="bor">1</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bor"><input type="checkbox" name="" class="checkone"></td>
+                <td class="bor">1</td>
+                <td class="bor">1</td>
+            </tr>
+            <tr>
+                <td class="bor"><input type="checkbox" name="" class="checkone></td>
+                <td class="bor">1</td>
+                <td class="bor">1</td>
+            </tr>
+            <tr>
+                <td class="bor"><input type="checkbox" name="" class="checkone></td>
+                <td class="bor">1</td>
+                <td class="bor">1</td>
+            </tr>
+            <tr>
+                <td class="bor"><input type="checkbox" name="" class="checkone></td>
+                <td class="bor">1</td>
+                <td class="bor">1</td>
+            </tr>
+        </tbody>
+    </table>
     <script>
-        var input = document.querySelector('input');
-        var message = document.getElementById('message');
-        input.onblur = function () {
-            if (input.value.length >= 6 || input.value.length <= 10) {
-                message.innerHTML = '输入正确';
-            } else {
-                message.innerHTML = '输入错误';
+        var trs = document.getElementsByTagName('tr');
+        for (i = 0; i < trs.length; i++) {
+            trs[i].onmouseover=function(){
+                this.className="bg";
+            }
+            trs[i].onmouseout=function(){
+                this.className="";
             }
         }
     </script>
